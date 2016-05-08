@@ -19,11 +19,23 @@ insertStyles('h1 { font-size: 14px }')
 //=> <head><style> h1 { ... }</style></head>
 ```
 
+## API
+
+#### `insertStyles(styles, [options]) -> void`
+
+##### styles
+
+Required. The string of styles to insert into the DOM.
+
+##### options
+
+###### id
+
+Calling `insertStyles` with the same `options.id` multiple times will make the same `<style>` element be re-used.
 
 ## Related
 
 * [insert-css](https://github.com/substack/insert-css)
-
 
 ## License
 
